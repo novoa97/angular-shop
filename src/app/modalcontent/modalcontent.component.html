@@ -1,0 +1,10 @@
+<section *ngIf="type === 'login'; else card">
+  <input type="text" class="form-control input-form" id="email" #name="ngModel" [(ngModel)]="email" name="email">
+  <input type="password" class="form-control input-form" id="password" #name="ngModel" [(ngModel)]="password" name="password">
+</section>
+<ng-template #card>
+    <input type="text" class="form-control input-form" id="cardnumber" #name="ngModel" [(ngModel)]="cardnumber" name="cardnumber">
+    <input type="text" class="form-control input-form-middle" id="cardmonth" #name="ngModel" [(ngModel)]="cardmonth" name="cardmonth">
+    <input type="text" class="form-control input-form-middle left" id="cardyear" #name="ngModel" [(ngModel)]="cardyear" name="cardyear">
+    <input type="text" class="form-control input-form" id="cardcv" #name="ngModel" [(ngModel)]="cardcv" name="cardcv">
+</ng-template>
