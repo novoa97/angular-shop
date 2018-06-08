@@ -2,7 +2,23 @@ header{
   background-color: black;
   height: 40px;
   margin-bottom: 10px;
+  position: sticky;
 }
 .logo{
   height: 25px;
+  margin-left: 5px;
+}
+footer{
+  background-color: black;
+  height: 40px;
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  text-align: center;
+}
+footer p{
+  color: white;
+  position: relative;
+  top: 50%;
+  transform: translateY(-50%);
 }
